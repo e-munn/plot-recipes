@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .a {
+        fill: #FFD8D6;
+      }
+
+      .b {
+        fill: #c60000;
+      }
+
+      .c, .d {
+        fill: none;
+        stroke: #6b0300;
+        stroke-miterlimit: 10;
+      }
+
+      .c {
+        stroke-width: 5px;
+      }
+
+      .d {
+        stroke-linecap: round;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="a" cx="50" cy="50" r="50"/>
+    <circle class="b" cx="50" cy="50" r="12.66"/>
+    <g>
+      <circle class="c" cx="50" cy="50" r="35.19"/>
+      <g>
+        <line class="d" x1="61.77" y1="61.77" x2="78.27" y2="78.27"/>
+        <line class="d" x1="38.23" y1="61.77" x2="21.73" y2="78.27"/>
+        <line class="d" x1="38.23" y1="38.23" x2="21.73" y2="21.73"/>
+        <line class="d" x1="61.77" y1="38.23" x2="78.27" y2="21.73"/>
+      </g>
+    </g>
+  </g>
+</svg>

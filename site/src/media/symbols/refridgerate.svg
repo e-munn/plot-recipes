@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .a {
+        fill: #caf3ff;
+      }
+
+      .b {
+        fill: #3bb4ff;
+      }
+
+      .b, .c {
+        stroke: #0c028e;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .c {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="a" cx="50" cy="50" r="50"/>
+    <rect class="b" x="27.23" y="13.7" width="45.53" height="72.6" rx="4.37"/>
+    <line class="c" x1="27.23" y1="63" x2="72.77" y2="63"/>
+    <line class="c" x1="64.52" y1="50" x2="64.52" y2="31.28"/>
+  </g>
+</svg>

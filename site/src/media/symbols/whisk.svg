@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .a {
+        <!-- fill: #EFD6FF; -->
+        fill:url(#myGradient)
+      }
+
+      .b, .c {
+        fill: none;
+        stroke: #1f003f;
+        stroke-width: 2px;
+      }
+
+      .b {
+        stroke-miterlimit: 10;
+      }
+
+      .c {
+        stroke-linejoin: round;
+      }
+
+      .d {
+        fill: #7000E0;
+      }
+    </style>
+    <radialGradient id="myGradient">
+      <stop offset="100%" stop-color="#EFD6FF" />
+      <stop offset="100%" stop-color="#EFD6FF00" />
+    </radialGradient>
+  </defs>
+  <g>
+    <circle class="a" cx="50" cy="50" r="50" />
+    <g>
+      <path class="b" d="M54.59,50.85c-11-11-26.4-43.61-36-34S41.53,42,52.5,52.94"/>
+      <line class="b" x1="53.56" y1="51.88" x2="18.56" y2="16.87"/>
+      <path class="c" d="M55.64,49.79,51.44,54C42.66,45.22.36,35.07,18.56,16.87S46.87,41,55.64,49.79Z"/>
+    </g>
+    <rect class="d" x="63.16" y="47.7" width="11.56" height="39.12" rx="2" transform="translate(165.25 66.08) rotate(135)"/>
+  </g>
+</svg>

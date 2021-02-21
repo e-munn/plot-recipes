@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .a {
+        fill: #ffe2e1;
+      }
+
+      .b {
+        fill: #c60000;
+      }
+
+      .c {
+        fill: #6b0300;
+      }
+
+      .d {
+        fill: none;
+        stroke: #6b0300;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle class="a" cx="50" cy="50" r="50"/>
+    <g>
+      <rect class="b" x="16.36" y="20.55" width="66.35" height="58.9" rx="4"/>
+      <rect class="c" x="24.27" y="39.48" width="51.42" height="33.34" rx="2"/>
+      <line class="d" x1="26.96" y1="34.41" x2="72.99" y2="34.41"/>
+      <circle class="c" cx="49.98" cy="27.04" r="2.31"/>
+      <circle class="c" cx="65.31" cy="27.04" r="2.31"/>
+      <circle class="c" cx="34.64" cy="27.04" r="2.31"/>
+    </g>
+  </g>
+</svg>
