@@ -1,98 +1,358 @@
 [{
-    "name": "Mashed Potatoes",
-    "path": "mashed-potatoes",
-    "vessel": "mashed potatoes",
-    "detail": "Add slowly to mixture, then pour into something. I'm not that sure",
-    "order": 2,
-    "preactions": [],
-    "postactions": [],
-    "children": [{
-      "vessel": "large bowl",
-      "preactions": [],
-      "postactions": ["whisk"],
-      "finalaction": ["serve"],
-      "detail": "Add slowly to mixture, then pour into something. I'm not that sure",
-      "order": 1,
+    "name": "Sweet Potatoes With Cilantro-Chile Sauce",
+    "path": "sweet-potatoes-with-cilantro-chiles-sauce",
+    "src_title": "NYT Cooking",
+    "src_auth": "Melissa Clark",
+    "src_url": "https://cooking.nytimes.com/recipes/1018313-sweet-potatoes-with-yogurt-and-cilantro-chile-sauce",
+    "cuisine": "Vegetarian",
+    "price": "$",
+    "meal": "side dish",
+    "recipe": [{
+      "vessel": "bowl",
+      "detail": "serving bowl",
+      "transfer": "serve",
       "children": [{
-        "vessel": "pot",
-        "preactions": [],
-        "postactions": ["stove"],
-        "finalaction": ["transfer"],
-        "detail": "Add slowly to mixture, then pour into something. I'm not that sure",
-        "order": 0,
+          "vessel": "baking sheet",
+          "detail": "medium size",
+          "vorder": 1,
+          "transfer": "transfer",
+          "children": [{
+            "vessel": "large bowl",
+            "detail": "medium size",
+            "vorder": 0,
+            "transfer": "spread",
+            "children": [{
+              "ingredient": "oil",
+              "detail": "olive oil",
+              "food_group": "fat",
+              "ing_amt": 0.33,
+              "ing_unit": "cups"
+            }, {
+              "ingredient": "honey",
+              "detail": "from bees",
+              "food_group": "fat",
+              "ing_amt": 0.5,
+              "ing_unit": "tablespoons"
+            }, {
+              "action": "toss",
+              "detail": "toss until wedges fully coated",
+              "action_type": null,
+              "action_amt": 3,
+              "action_unit": "min"
+            }, {
+              "ingredient": "lime",
+              "detail": "fresh lime",
+              "food_group": "fruit",
+              "ing_amt": 2,
+              "ing_unit": null
+            }, {
+              "ingredient": "salt",
+              "detail": "sea salt",
+              "food_group": "spice",
+              "ing_amt": 1,
+              "ing_unit": "large pinch"
+            }, {
+              "ingredient": "pepper",
+              "detail": "black pepper",
+              "food_group": "spice",
+              "ing_amt": 1,
+              "ing_unit": "large pinch"
+            }, {
+              "ingredient": "sweet potato wedges",
+              "detail": "small, fresh",
+              "food_group": "vegetable",
+              "ing_amt": 2,
+              "ing_unit": "large"
+            }, {
+              "action": "stir",
+              "detail": "",
+              "action_type": null,
+              "action_amt": 2,
+              "action_unit": "min"
+            }]
+          }, {
+            "action": "bake",
+            "detail": "until tender and lightly browned",
+            "action_type": null,
+            "action_amt": 45,
+            "action_unit": "minutes"
+          }]
+        },
+        {
+          "vessel": "food processor",
+          "detail": "large",
+          "vorder": 1,
+          "transfer": "pour",
+          "children": [{
+            "ingredient": "oil",
+            "detail": "olive oil",
+            "food_group": "fat",
+            "ing_amt": 0.33,
+            "ing_unit": "cup"
+          }, {
+            "ingredient": "cilantro",
+            "detail": "fresh",
+            "food_group": "spice",
+            "ing_amt": 0.5,
+            "ing_unit": "bunch"
+          }, {
+            "ingredient": "chiles",
+            "detail": "green",
+            "food_group": "vegetable",
+            "ing_amt": 2,
+            "ing_unit": "large"
+          }, {
+            "ingredient": "garlic",
+            "detail": "",
+            "food_group": "",
+            "ing_amt": 2,
+            "ing_unit": "cloves"
+          }, {
+            "ingredient": "almonds",
+            "detail": "",
+            "food_group": "",
+            "ing_amt": 2,
+            "ing_unit": "tablespoons"
+          }, {
+            "ingredient": "vinegar",
+            "detail": "white wine",
+            "food_group": "",
+            "ing_amt": 1,
+            "ing_unit": "tablespoon"
+          }, {
+            "action": "blend",
+            "detail": "blend full",
+            "action_type": null,
+            "action_amt": 1,
+            "action_unit": "min"
+          }]
+        }
+      ]
+    }]
+  }, {
+    "name": "Creamy White Bean Soup With Spicy Paprika Oil",
+    "path": "creamy-white-bean-soup-with-spicy-paprika-oil",
+    "src_title": "NYT Cooking",
+    "src_auth": "Alexa Weibel",
+    "src_url": "https://cooking.nytimes.com/recipes/1020882-creamy-white-bean-soup-with-spicy-paprika-oil?action=click&module=Recirculation%20Band%20Recipe%20Card&region=More%20from%20Easy%20Weeknight%20Dinners&pgType=recipedetails&rank=2",
+    "cuisine": "Soups",
+    "price": "$",
+    "meal": "Main",
+    "recipe": [{
+      "vessel": "bowl",
+      "detail": "serving bowl",
+      "transfer": "serve",
+      "children": [{
+        "vessel": "blender",
         "children": [{
-          "ingredient": "potatoes",
-          "amount": "10 large",
-          "actions": ["peel"],
-          "detail": "Add slowly to mixture, then pour into something. I'm not that sure",
-          "order": 0
+          "vessel": "large pot",
+          "children": [{
+            "ingredient": "oil",
+            "ing_amt": 0.25,
+            "ing_unit": "cup"
+          }, {
+            "action": "stove",
+            "action_amt": 3,
+            "action_unit": "min"
+          }, {
+            "ingredient": "shallots",
+            "ing_amt": 3,
+            "ing_unit": "large"
+          }, {
+            "ingredient": "celery",
+            "ing_amt": 4,
+            "ing_unit": "large"
+          }, {
+            "ingredient": "garlic",
+            "ing_amt": 5,
+            "ing_unit": "cloves"
+          }, {
+            "ingredient": "italian seasoning",
+            "ing_amt": 3,
+            "ing_unit": "teaspoons"
+          }, {
+            "ingredient": "fennel seeds",
+            "ing_amt": 1.5,
+            "ing_unit": "teaspoons"
+          }, {
+            "ingredient": "rosemary",
+            "ing_amt": 0.75,
+            "ing_unit": "teaspoons"
+          }, {
+            "ingredient": "salt"
+          }, {
+            "ingredient": "pepper"
+          }, {
+            "action": "cook",
+            "action_amt": 10,
+            "action_unit": "min"
+          }, {
+            "ingredient": "chicken stock",
+            "ing_amt": 6,
+            "ing_unit": "cups"
+          }, {
+            "ingredient": "cannellini beans",
+            "ing_amt": 14,
+            "ing_unit": "ounces"
+          }, {
+            "action": "boil",
+            "action_amt": 15,
+            "action_unit": "min"
+          }]
+
+        }, {
+          "ingredient": "almond milk"
+        }, {
+          "ingredient": "salt"
+        }, {
+          "ingredient": "pepper"
+        }, {
+          "action": "puree",
+          "action_amt": 2,
+          "action_unit": "min"
         }]
       }, {
-        "ingredient": "butter",
-        "amount": "1 Tbsp",
-        "actions": ["melt"],
-        "detail": "Add slowly to mixture, then pour into something. I'm not that sure",
-        "order": 0
-      }, {
-        "ingredient": "salt",
-        "amount": "1 Tbsp",
-        "actions": [],
-        "detail": "Add slowly to mixture, then pour into something. I'm not that sure",
-        "order": 1
-      }, {
-        "ingredient": "pepper",
-        "amount": "1 tsp.",
-        "actions": [],
-        "detail": "Add slowly to mixture, then pour into something. I'm not that sure",
-        "order": 2
-      }, {
-        "ingredient": "cheese",
-        "amount": "sprinkle",
-        "actions": ["grind"],
-        "detail": "Add slowly to mixture, then pour into something. I'm not that sure",
-        "order": 3
+        "vessel": "skillet",
+        "children": [{
+            "ingredient": "oil",
+            "ing_amt": 0.33,
+            "ing_unit": "large"
+          },
+          {
+            "action": "stove",
+            "action_amt": 2,
+            "action_unit": "min"
+          },
+          {
+            "ingredient": "paprika",
+            "ing_amt": 1.5,
+            "ing_unit": "teaspoons"
+          },
+          {
+            "ingredient": "red-pepper flakes",
+            "ing_amt": 0.5,
+            "ing_unit": "teaspoons"
+          },
+          {
+            "action": "stove",
+            "action_amt": 2,
+            "action_unit": "min"
+          },
+          {
+            "action": "stir",
+            "action_amt": 1,
+            "action_unit": "min"
+          },
+          {
+            "action": "strain",
+            "action_amt": 1,
+            "action_unit": "min"
+          }
+        ]
       }]
     }]
   },
-
-
   {
-    "name": "Melon Soup",
-    "path": "melon-soup",
-    "vessel": "melon soup",
-    "detail": "",
-    "order": 2,
-    "preactions": [],
-    "postactions": [],
-    "children": [{
-        "vessel": "bowl",
-        "preactions": [],
-        "postactions": ["refridgerate"],
-        "finalaction": [],
-        "detail": "",
-        "order": 1,
+    "name": "Hearty Whole-Wheat Pasta With Brussels Sprouts, Cheese and Potato",
+    "path": "hearty-whole-wheat-pasta-with-brussels-sprouts-cheese-and-potato",
+    "src_title": "NYT Cooking",
+    "src_auth": "Julia Moskin",
+    "src_url": "https://cooking.nytimes.com/recipes/1014588-hearty-whole-wheat-pasta-with-brussels-sprouts-cheese-and-potato?action=click&module=Collection%20Page%20Recipe%20Card&region=Easy%20Weeknight%20Dinners&pgType=collection&rank=35",
+    "cuisine": "Italian",
+    "price": "$",
+    "meal": "Main",
+    "recipe": [{
+      "vessel": "plate",
+      "detail": "serving plate",
+      "transfer": "serve",
+      "children": [{
+        "vessel": "roasting pan",
         "children": [{
-            "ingredient": "melon",
-            "amount": "medium",
-            "actions": ["grate"],
-            "detail": "Grate flesh of medium ripe melon",
-            "order": 0
-          },
-          {
-            "ingredient": "lime juice",
-            "amount": "2 Tbsp",
-            "actions": [],
-            "detail": "",
-            "order": 1
-          },
-          {
-            "ingredient": "chili powder",
-            "amount": "1 tsp",
-            "actions": [],
-            "detail": "",
-            "order": 2
-          }
-        ]
-      }]}
-
-    ]
+          "vessel": "large pot",
+          "transfer": "tip",
+          "children": [{
+              "ingredient": "water",
+              "ing_amt": null,
+              "ing_unit": null
+            },
+            {
+              "action": "boil",
+              "action_amt": 12,
+              "action_unit": "min"
+            },
+            {
+              "ingredient": "salt"
+            },
+            {
+              "ingredient": "brussel sprouts",
+              "ing_amt": 1.75,
+              "ing_unit": "pounds"
+            },
+            {
+              "ingredient": "potato",
+              "ing_amt": 1,
+              "ing_unit": "large"
+            },
+            {
+              "ingredient": "pasta",
+              "ing_amt": 1,
+              "ing_unit": "pound"
+            },
+            {
+              "action": "boil",
+              "action_amt": 10,
+              "action_unit": "minutes"
+            },
+            {
+              "action": "reserve 2 cups of water",
+              "action_amt": 1,
+              "action_unit": "minutes"
+            },
+            {
+              "action": "strain",
+              "action_amt": 1,
+              "action_unit": "minutes"
+            }
+          ]
+        }, {
+          "vessel": "sauce pan",
+          "detail": "small",
+          "transfer": "spoon",
+          "children": [{
+            "ingredient": "butter",
+            "ing_amt": 3,
+            "ing_unit": "tablespoons"
+          }, {
+            "ingredient": "olive oil",
+            "ing_amt": 1,
+            "ing_unit": "tablespoon"
+          }, {
+            "ingredient": "garlic",
+            "ing_amt": 1,
+            "ing_unit": "clove"
+          }, {
+            "action": "stove",
+            "action_amt": 2,
+            "action_unit": "min"
+          }, {
+            "ingredient": "sage",
+            "ing_amt": 4,
+            "ing_unit": "leaves"
+          }]
+        }, {
+          "ingredient": "parmesan",
+          "ing_amt": 0.5,
+          "ing_unit": "cups"
+        }, {
+          "action": "bake",
+          "action_amt": 20,
+          "action_unit": "min"
+        }, {
+          "action": "let stand",
+          "action_amt": 15,
+          "action_unit": "min"
+        }]
+      }]
+    }]
+  }
+]

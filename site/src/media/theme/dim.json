@@ -1,42 +1,29 @@
 {
-  "main": {
-    "left": 80,
-    "right": 10,
-    "padding": 20,
-    "breath": 0,
-    "newLine": 0,
-    "linkY": 0
-  },
-  "ingredient": {
-    "marginLeft":100,
-    "offset": 15,
-    "textSize": 13,
-    "amountOffset": 10,
-    "amountSize": 10,
-    "nodeMargin": 10,
-    "nodeWidth": 20,
-    "nodeHeight": 20,
-    "nodeStroke": 3,
-    "strokeWidth": 2,
-    "radius": 2
-  },
-  "vessel": {
-    "shape": {
-      "label": 60,
-      "textSize": 14,
-      "textHeight": 18,
-      "width": 18,
-      "stroke": 2,
-      "paddingHeight": 0,
-      "marginHeight": 120,
-      "marginWidth": 40
-    },
-    "action": {
-      "margin": 0,
-      "radius": 34
+  "m": {
+    "serveHeight":40,
+    "margin":{
+      "left": 35
     }
   },
-  "serve": {
-    "height": 40
+  "v": {
+    "textSize":13,
+    "marginBottom": 10,
+    "padding": 0,
+    "shove": 140,
+    "gap": 120,
+    "s": {
+      "width":15,
+      "stroke":1
+    }
+  },
+  "i": {
+    "textSize":12,
+    "height":12
+  },
+  "a": {
+    "textSize":12,
+    "width":8,
+    "height":35,
+    "amtScale":7
   }
 }
