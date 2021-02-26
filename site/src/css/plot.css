@@ -1,0 +1,11 @@
+.plot-text{
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+
+.vessel{
+  font-size: 12px;
+
+}

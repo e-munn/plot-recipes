@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 
 import { select, linkVertical } from 'd3';
+import '../../../css/plot.css'
+
+
 
 const Vessel = ({ a, i, dim, color }) => {
 
@@ -28,7 +31,10 @@ const Vessel = ({ a, i, dim, color }) => {
       cy={ a.data.pY + dim.v.s.width/2}
       r={ dim.v.s.width/2 }
       // transform={`translate(${dim.vessel.shape.width*-.5}, ${0})`}
-      fill={ `${color.green2}` }
+      stroke={ `${color.green2}` }
+      strokeWidth={ 2 }
+      fill={ 'none' }
+
       >
         {a.data.vessel}
     </circle>
@@ -36,12 +42,13 @@ const Vessel = ({ a, i, dim, color }) => {
 
   const label = (
     <text
+      className={'plot-text vessel'}
       key={'c' + i}
-      x={  a.data.pX }
-      y={ a.data.pY }
+      x={ a.data.pX - 2 }
+      y={ a.data.pY + 5 }
       fill={ `${color.green2}` }
-      fontSize={dim.v.textSize}
-      alignmentBaseline={'middle'}
+      // fontSize={dim.v.textSize}
+      alignmentBaseline={'hanging'}
       >
         {a.data.vessel}
     </text>
@@ -67,9 +74,12 @@ const Vessel = ({ a, i, dim, color }) => {
 
   return (
       <g>
+
         {transfer}
         {shape}
-        {dot}
+        {label}
+
+        {/* {dot} */}
       </g>
   );
 };
