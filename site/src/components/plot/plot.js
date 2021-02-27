@@ -6,6 +6,7 @@ import IngredientNode from './ingredients/ingredientNode.js';
 import Action from './actions/actions.js';
 import color from '../../media/theme/colors.json';
 import dim from '../../media/theme/dim.json';
+import '../../css/plot.css'
 
 const Plot = ({recipe}) => {
 
@@ -27,9 +28,9 @@ const Plot = ({recipe}) => {
           .duration(1000)
           .ease(easeCubicIn)
 
-        all
-          .attr('filter', 'url(#blur)')
-          .attr('opacity', .5)
+        // all
+        //   .attr('filter', 'url(#blur)')
+        //   .attr('opacity', .5)
 
         cur
           .attr('filter', 'none')
@@ -62,10 +63,12 @@ const Plot = ({recipe}) => {
           .attr('fill', color.background)
 
 
-        var amt = cur.append('text')
+        var det = cur.append('text')
+          .classed('plot-text', 1)
           .classed('focus', 1)
           .attr('x', curX)
           .attr('y', curY)
+          .attr('text-transform', 'none')
           .attr('fill', textColor)
           .attr('font-size', dim.i.font.detailSize)
           .attr('alignment-baseline', 'middle')
@@ -86,8 +89,8 @@ const Plot = ({recipe}) => {
           .attr('y', 0)
           .attr('width', '100vw')
           .attr('height', +svgHeight)
-          .attr('fill', 'transparent')
-          .attr('opacity', 1)
+          .attr('fill', color.background)
+          .attr('opacity', .75)
 
           .on('click', () => {
             cur.selectAll('.focus').remove()
@@ -97,7 +100,7 @@ const Plot = ({recipe}) => {
           })
 
         rect.raise()
-        amt.raise()
+        det.raise()
 
         if (!(prevFocus.current == false)){
           var prev = prevFocus.current

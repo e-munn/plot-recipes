@@ -377,8 +377,8 @@
         "transfer": "cut",
         "children": [{
           "vessel": "counter",
-          "detail": "kkk",
-          "transfer": "roll",
+          "detail": "",
+          "transfer": "place",
           "children": [{
               "vessel": "plastic wrap",
               "detail": "",
@@ -390,7 +390,7 @@
                   "children": [{
                       "vessel": "bowl",
                       "detail": "",
-                      "transfer": "transfer",
+                      "transfer": "spread",
                       "children": [{
                         "ingredient": "shredded butter",
                         "ing_amt": 4,
@@ -523,7 +523,7 @@
         }, {
           "vessel": "dutch oven",
           "detail": "",
-          "transfer": "transfer",
+          "transfer": "spread",
           "children": [{
             "vessel": "bowl",
             "detail": "",

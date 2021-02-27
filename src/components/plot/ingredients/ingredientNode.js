@@ -28,12 +28,10 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
   var texzt = b.data.ingredient + '<tspan>' + b.data.ing_amt + '</tspan>'
   const label = (
     <text
-      className={'plot-text'}
-      className={'plot-animation-fill'}
+      className={'plot-animation-fill plot-text'}
       key={'ilabel' + a + b + j}
       x={ b.data.pX + 10 }
       y={ b.data.pY + 1 }
-      style={{textTransform:'capitalize'}}
       // style={{filter:'url(#blur)'}}
       fill={`${statesIng[done].dotColor}`}
       textAnchor={'start'}
@@ -45,14 +43,13 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
 
       { b.data.ingredient}
       <tspan
+        className={'plot-text'}
         alignmentBaseline={'middle'}
         fontSize={dim.i.font.size}
         fontWeight={dim.i.font.weight}
         fill={`${statesIng[done].dotColor}`}
         fontWeight={dim.i.font.weight}
         fontSize={dim.i.font.size - 4}
-
-
         >
         {' - ' + b.data.ing_amt + ' ' + b.data.ing_unit}
       </tspan>

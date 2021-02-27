@@ -28,12 +28,10 @@ const Action = ({ root, color, dim, a, b, j, focus, setFocus}) => {
 
   const label = (
     <text
-      className={'plot-text'}
-      className={'plot-animation-fill'}
+      className={'plot-animation-fill plot-text'}
       key={'action' + b + j}
       x={ b.data.pX + 10 }
       y={ b.data.pY + 5 }
-      style={{textTransform:'capitalize'}}
       fill={`${statesIng[done].dotColor}`}
       textAnchor={'start'}
       fontSize={dim.a.font.size}

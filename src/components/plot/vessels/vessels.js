@@ -62,10 +62,11 @@ const Vessel = ({ a, i, dim, color }) => {
   const transfer = (
     <path
       key={'path' + i}
+      id={'path' + i}
       stroke={ `${color.transfer}` }
       strokeWidth={3}
       fill={'none'}
-      // strokeDasharray={'5 5'}
+      strokeDasharray={'5 5'}
       d={
         linkVertical()({
           source: [a.data.pX, a.data.pY + a.data.pH],
@@ -76,11 +77,33 @@ const Vessel = ({ a, i, dim, color }) => {
     </path>
   )
 
+  const transferText = (
+    <text
+      key={'textPath' + i}
+      fill={'black'}
+      textAnchor={'middle'}
+      style={{transform : 'translate(4px, 0px)'}}
+
+
+      >
+        <textPath
+          href={'#path'+i}
+          startOffset={'50%'}
+
+          >
+          {a.data.transfer}
+
+        </textPath>
+    </text>
+  )
+
+
 
   return (
       <g>
 
         {transfer}
+        {transferText}
         {shape}
         {labelBack}
 
