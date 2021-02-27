@@ -19,7 +19,9 @@ const Card = ({d, i}) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
 
-  var url = '../media/images/' + d.path + '.jpg'
+  // var url = '../media/images/' + d.path + '.jpg'
+  var url = '../media/images/creamy-white-bean-soup-with-spicy-paprika-oil.jpg'
+
 
   return (
     <div
