@@ -7,14 +7,11 @@ import arrowdown from '../../media/ui-symbols/arrowdown.svg';
 import cleanRecipe from './clean.js';
 
 
-
-
-
 const PlotMaster = ({ recipe }) => {
 
   var recipeAndHeight = cleanRecipe(recipe)
   recipe = recipeAndHeight[0]
-  var svgHeight = recipeAndHeight[1] + 100
+  var svgHeight = recipeAndHeight[1] + 300
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
@@ -22,6 +19,23 @@ const PlotMaster = ({ recipe }) => {
   return (
     <div>
       <svg width={windowWidth} height={svgHeight}>
+        {/* <g>
+          <image
+            href={arrowup}
+            width={50}
+            x={windowWidth - 100}
+            y={0}
+
+            >
+          </image>
+          <image
+            href={arrowdown}
+            width={50}
+            x={windowWidth - 100}
+            y={100}
+            >
+          </image>
+        </g> */}
         <Plot
           recipe={recipe}
         />

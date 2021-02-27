@@ -28,7 +28,7 @@ export default function cleanRecipe(recipe){
           d.data.pH = pH
           d.data.pY = pY
         } else {
-          pH = dim.v.padding
+          pH = dim.v.padding1 + dim.v.padding2
           pH += (sum(d.actions) * dim.a.amtScale) + ((d.numIng + d.actions.length) * dim.i.height)
           pY = d.parent.data.pY + dim.v.gap
           pY += pH
@@ -45,8 +45,8 @@ export default function cleanRecipe(recipe){
   pY = 0
   pH = 0
   var taskCount = 0
-  root.eachBefore(
-    function(d){
+  root.each(
+    function(d, i){
       if ('vessel' in d.data) {
         if (d.depth == 0) {
           pY = pYMax
@@ -54,12 +54,14 @@ export default function cleanRecipe(recipe){
           d.data.pH = pH
           d.data.pY = pYMax
         } else {
-          pH = dim.v.padding
+
+          pH = dim.v.padding1 + dim.v.padding2
           pH += (sum(d.actions) * dim.a.amtScale) + ((d.numIng + d.actions.length) * dim.i.height)
           pY = d.parent.data.pY - dim.v.gap
           pY -= pH
           d.data.pY = pY
           d.data.pH = pH
+
         }
       }
     }
@@ -69,17 +71,19 @@ export default function cleanRecipe(recipe){
   pH = 0
   var taskCount = 0
   root.eachAfter(
-    function(d){
+    function(d, i){
       if ('vessel' in d.data) {
         taskCount = 0
-      }
+       }
       else if ('action' in d.data) {
+        d.data.stepOrder=i
         taskCount += dim.i.height
-        pY = d.parent.data.pY
+        pY = d.parent.data.pY + dim.v.padding1
         d.data.pY = pY + taskCount
         taskCount += d.data.action_amt * dim.a.amtScale
       } else if ('ingredient' in d.data) {
-        pY = d.parent.data.pY
+        d.data.stepOrder=i
+        pY = d.parent.data.pY + dim.v.padding1
         taskCount += dim.i.height
         d.data.pY = pY + taskCount
       }
@@ -94,11 +98,13 @@ export default function cleanRecipe(recipe){
 
   var pX = dim.m.margin.left
   root.each(
-    function(d){
+    function(d, i){
       if ('vessel' in d.data) {
         if (d.depth == 0) {
           d.data.pX = pX
         } else {
+          d.data.stepOrder=i
+
           pX = d.parent.data.pX
           var vesselSibs = d.parent.children.filter(a => ("vessel" in a.data))
           var numLess = vesselSibs.filter(b => (getLeafY(b) < getLeafY(d)) ).length

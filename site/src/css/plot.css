@@ -1,11 +1,15 @@
-.plot-text{
+.plot-text {
   font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
-  font-weight: 400;
-  letter-spacing: .5px;
 }
 
 .vessel{
-  font-size: 12px;
+}
 
+.plot-animation-move {
+  transition: transform 420ms ease 5ms;
+}
+
+.plot-animation-fill {
+  transition: fill 420ms ease 5ms;
 }

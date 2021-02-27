@@ -207,7 +207,7 @@
         }, {
           "ingredient": "pepper"
         }, {
-          "action": "puree",
+          "action": "purée",
           "action_amt": 2,
           "action_unit": "min"
         }]
@@ -351,6 +351,320 @@
           "action": "let stand",
           "action_amt": 15,
           "action_unit": "min"
+        }]
+      }]
+    }]
+  },
+
+
+
+  {
+    "name": "Tourte Aux Pommes De Terre",
+    "path": "tourte-aux-pommes-de-terre",
+    "src_title": "NYT Cooking",
+    "src_auth": "Andrew Janjigian",
+    "src_url": "",
+    "cuisine": "French",
+    "price": "$$",
+    "meal": "Main",
+    "recipe": [{
+      "vessel": "plate",
+      "detail": "serving plate",
+      "transfer": "serve",
+      "children": [{
+        "vessel": "pie plate",
+        "detail": "9-inch pie plate",
+        "transfer": "cut",
+        "children": [{
+          "vessel": "counter",
+          "detail": "kkk",
+          "transfer": "roll",
+          "children": [{
+              "vessel": "plastic wrap",
+              "detail": "",
+              "transfer": "roll",
+              "children": [{
+                  "vessel": "medium bowl",
+                  "detail": "",
+                  "transfer": "transfer",
+                  "children": [{
+                      "vessel": "bowl",
+                      "detail": "",
+                      "transfer": "transfer",
+                      "children": [{
+                        "ingredient": "shredded butter",
+                        "ing_amt": 4,
+                        "ing_unit": "tablespoons"
+                      }, {
+                        "action": "freeze",
+                        "action_amt": 40,
+                        "action_unit": "miutes"
+                      }]
+                    },
+                    {
+                      "vessel": "food processor",
+                      "detail": "",
+                      "transfer": "transfer",
+                      "children": [{
+                          "ingredient": "flour",
+                          "detail": "All-purposes flour",
+                          "ing_amt": 1.5,
+                          "ing_unit": "cups"
+                        }, {
+                          "ingredient": "salt",
+                          "detail": "table salt",
+                          "ing_amt": 1,
+                          "ing_unit": "tablespoon"
+                        }, {
+                          "action": "pulse",
+                          "detail": "pulse until combined, 2 pulses",
+                          "action_amt": 2,
+                          "action_unit": "times"
+                        }, {
+                          "ingredient": "butter",
+                          "detail": "add cubed butter",
+                          "ing_amt": 1,
+                          "ing_unit": "cup"
+                        }, {
+                          "action": "process",
+                          "detail": "process until homogeneous paste forms",
+                          "action_amt": 1,
+                          "action_unit": "minutes"
+                        }, {
+                          "action": "break",
+                          "detail": "carefully break paste into 2 inch chunks",
+                          "action_amt": 1,
+                          "action_unit": "minutes"
+                        }, {
+                          "action": "redistribute",
+                          "detail": "redistribute evenly around blade",
+                          "action_amt": 1,
+                          "action_unit": "minutes"
+                        }, {
+                          "ingredient": "flour",
+                          "detail": "All-purposes flour",
+                          "ing_amt": 1,
+                          "ing_unit": "cup"
+                        },
+                        {
+                          "action": "pulse",
+                          "detail": "pulse until miture is broken into pieces no larger tha 1 inch",
+                          "action_amt": 5,
+                          "action_unit": "times"
+                        }
+                      ]
+                    },
+
+                    {
+                      "ingredient": "ice water",
+                      "detail": "sprinkle over mixture",
+                      "ing_amt": 0.25,
+                      "ing_unit": "cup"
+                    },
+                    {
+                      "action": "toss",
+                      "detail": "toss with rubber spatula until mixture is evenly moistened",
+                      "action_amt": 1,
+                      "action_unit": "minutes"
+                    }, {
+                      "ingredient": "ice water",
+                      "detail": "sprinkle remaining ice water over mixture",
+                      "ing_amt": 0.25,
+                      "ing_unit": "cup"
+                    },
+                    {
+                      "action": "toss",
+                      "detail": "toss to combine",
+                      "action_amt": 3,
+                      "action_unit": "minutes"
+                    },
+                    {
+                      "action": "press",
+                      "detail": "press dough with spatula until dough sticks together",
+                      "action_amt": 2,
+                      "action_unit": "minutes"
+                    },
+                    {
+                      "action": "divide",
+                      "detail": "use spatula to divide dough into 2 portions",
+                      "action_amt": 2,
+                      "action_unit": "minutes"
+                    }
+                  ]
+                },
+                {
+                  "action": "form",
+                  "detail": "form into 5 inch disk",
+                  "action_amt": 3,
+                  "action_unit": "minutes"
+                },
+                {
+                  "action": "refridgerate",
+                  "detail": "refridgerate for at least 2 hours",
+                  "action_amt": 150,
+                  "action_unit": "minutes"
+                }
+              ]
+            }, {
+              "action": "let sit",
+              "action_amt": 10,
+              "action_unit": "minutes"
+            }, {
+              "ingredient": "flour",
+              "ing_amt": 1,
+              "ing_unit": "cup"
+            },
+            {
+              "action": "spread",
+              "action_amt": 1,
+              "action_unit": "min"
+            }
+          ]
+        }, {
+          "vessel": "dutch oven",
+          "detail": "",
+          "transfer": "transfer",
+          "children": [{
+            "vessel": "bowl",
+            "detail": "",
+            "transfer": "transfer",
+            "children": [{
+              "ingredient": "onion",
+              "detail": "onion, halved and sliced thin",
+              "ing_amt": 1,
+              "ing_unit": "large"
+            }, {
+              "ingredient": "salt",
+              "detail": "table salt",
+              "ing_amt": 1.5,
+              "ing_unit": "teaspoons"
+            }, {
+              "action": "toss",
+              "detail": "toss onion and salt",
+              "action_amt": 2,
+              "action_unit": "minutes"
+            },{
+              "action": "set aside",
+              "action_amt": 2,
+              "action_unit": "minutes"
+            }
+          ]
+          }, {
+            "ingredient": "water",
+            "detail": "4 Quarts of water",
+            "ing_amt": 4,
+            "ing_unit": "quarts"
+          }, {
+            "action": "boil",
+            "detail": "bring to boil over high heat",
+            "action_amt": 12,
+            "action_unit": "minutes"
+          }, {
+            "ingredient": "potatoes",
+            "detail": "Yukon Gold potatoes, peeled and sliced",
+            "ing_amt": 2,
+            "ing_unit": "pounds"
+          }, {
+            "ingredient": "baking soda",
+            "detail": "add baking soda",
+            "ing_amt": 0.5,
+            "ing_unit": "teaspoons"
+          }, {
+            "action": "cook",
+            "detail": "cook for 1 minute",
+            "action_amt": 1,
+            "action_unit": "minutes"
+          }, {
+            "action": "drain",
+            "detail": "drain potatoes",
+            "action_amt": 1,
+            "action_unit": "minutes"
+          }, {
+            "action": "return",
+            "detail": "return potatoes to pot",
+            "action_amt": 1,
+            "action_unit": "minutes"
+          }, {
+            "ingredient": "heavy cream",
+            "detail": "add heavy cream",
+            "ing_amt": 1.25,
+            "ing_unit": "cups"
+          }, {
+            "ingredient": "garlic",
+            "detail": "add garlic",
+            "ing_amt": 3,
+            "ing_unit": "cloves"
+          }, {
+            "ingredient": "pepper",
+            "detail": "add pepper",
+            "ing_amt": 0.5,
+            "ing_unit": "teaspoons"
+          }, {
+            "ingredient": "nutmeg",
+            "detail": "add nutmeg",
+            "ing_amt": 0.25,
+            "ing_unit": "teaspoons"
+          }, {
+            "ingredient": "onion",
+            "detail": "add onion from before",
+            "ing_amt": 1,
+            "ing_unit": "teaspoons"
+          }, {
+            "action": "simmer",
+            "detail": "adjust heat to maintainn simmer and cook",
+            "action_amt": 5,
+            "action_unit": "minutes"
+          }, {
+            "action": "stir",
+            "detail": "stir gently and frequently",
+            "action_amt": 5,
+            "action_unit": "minutes"
+          },{
+            "action": "let cool",
+            "detail": "let cool off heat",
+            "action_amt": 60,
+            "action_unit": "minutes"
+          }, {
+            "ingredient": "parsley",
+            "detail": "minced fresh",
+            "ing_amt": 2,
+            "ing_unit": "tablespoons"
+          }, {
+            "action": "stir",
+            "detail": "stir parsley into potato mixture",
+            "action_amt": 2,
+            "action_unit": "minutes"
+          }]
+        }, {
+          "ingredient": "egg",
+          "detail": "lightly beaten",
+          "ing_amt": 1,
+          "ing_unit": "egg"
+        }, {
+          "action": "brush",
+          "detail": "brush egg on surface",
+          "action_amt": 1,
+          "action_unit": "minutes"
+        }, {
+          "action": "bake",
+          "detail": "bake until top is light golden brown",
+          "action_amt": 20,
+          "action_unit": "minutes"
+        }, {
+          "action": "reduce heat",
+          "detail": "reduce oven temperature to 325 degrees",
+          "action_amt": 1,
+          "action_unit": "minutes"
+        }, {
+          "action": "bake",
+          "detail": "continue to bake until crust is deep golden brown",
+          "action_amt": 40,
+          "action_unit": "minutes"
+        }, {
+          "action": "cool",
+          "detail": "let cool on wire rack",
+          "action_amt": 30,
+          "action_unit": "minutes"
         }]
       }]
     }]

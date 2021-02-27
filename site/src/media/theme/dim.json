@@ -6,24 +6,38 @@
     }
   },
   "v": {
-    "textSize":13,
+    "font":{
+      "size":15,
+      "weight":400,
+      "spacing":0.5
+    },
     "marginBottom": 10,
-    "padding": 0,
+    "padding1": 20,
+    "padding2": 8,
     "shove": 140,
     "gap": 120,
     "s": {
       "width":15,
-      "stroke":1
+      "stroke":1.5
     }
   },
   "i": {
-    "textSize":12,
-    "height":12
+    "font":{
+      "size":13,
+      "amountSize":10,
+      "detailSize":12,
+      "weight":300
+    },
+    "height":26,
+    "radius":4
   },
   "a": {
-    "textSize":12,
+    "font":{
+      "size":13,
+      "weight":500
+    },
     "width":8,
     "height":35,
-    "amtScale":7
+    "amtScale":10
   }
 }

@@ -6,8 +6,9 @@
   "gray2": "#666",
   "orange1": "#FFC09B",
   "orange2": "#F7772D",
+  "orange3": "#EC5C09",
   "green1": "#A2D49B",
   "green2": "#146D08",
   "action": "#A2D49B",
-  "transfer": "#B8B8B8"
+  "transfer": "#CCCCCC"
 }

@@ -10,7 +10,7 @@ const Vessel = ({ a, i, dim, color }) => {
   const shape = (
     <rect
       className={'vesselShape'}
-      key={'c' + i}
+      key={'vshape' + i}
       width={ dim.v.s.width }
       height={ a.data.pH }
       x={ a.data.pX }
@@ -24,43 +24,48 @@ const Vessel = ({ a, i, dim, color }) => {
     </rect>
   )
 
-  const dot = (
-    <circle
-      key={'c' + i}
-      cx={ a.data.pX }
-      cy={ a.data.pY + dim.v.s.width/2}
-      r={ dim.v.s.width/2 }
-      // transform={`translate(${dim.vessel.shape.width*-.5}, ${0})`}
-      stroke={ `${color.green2}` }
-      strokeWidth={ 2 }
-      fill={ 'none' }
-
-      >
-        {a.data.vessel}
-    </circle>
-  )
 
   const label = (
     <text
-      className={'plot-text vessel'}
-      key={'c' + i}
-      x={ a.data.pX - 2 }
+      className={'plot-text'}
+      key={'l' + i}
+      x={ a.data.pX - 4 }
       y={ a.data.pY + 5 }
       fill={ `${color.green2}` }
-      // fontSize={dim.v.textSize}
+      fontSize={dim.v.font.size}
+      fontWeight={dim.v.font.weight}
+      letterSpacing={dim.v.font.spacing}
       alignmentBaseline={'hanging'}
       >
+        {/* {a.data.stepOrder} */}
         {a.data.vessel}
     </text>
   )
 
 
+  const labelBack = (
+    <rect
+      key={'lb' + i}
+      x={ a.data.pX - 2 }
+      y={ a.data.pY + 2 }
+      width={ 12 }
+      height={ dim.v.font.size + 4 }
+      fill={ `${color.background}` }
+      stroke={ 'none' }
+      >
+        {a.data.vessel}
+    </rect>
+  )
+
+
+
   const transfer = (
     <path
+      key={'path' + i}
       stroke={ `${color.transfer}` }
-      strokeWidth={5}
+      strokeWidth={3}
       fill={'none'}
-      strokeDasharray={'5 5'}
+      // strokeDasharray={'5 5'}
       d={
         linkVertical()({
           source: [a.data.pX, a.data.pY + a.data.pH],
@@ -77,7 +82,10 @@ const Vessel = ({ a, i, dim, color }) => {
 
         {transfer}
         {shape}
+        {labelBack}
+
         {label}
+
 
         {/* {dot} */}
       </g>
