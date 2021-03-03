@@ -2,19 +2,18 @@
   "m": {
     "serveHeight":40,
     "margin":{
-      "left": 35
+      "left": 25
     }
   },
   "v": {
     "font":{
       "size":15,
-      "weight":400,
-      "spacing":0.5
+      "spacing": 0
     },
     "marginBottom": 10,
     "padding1": 20,
     "padding2": 8,
-    "shove": 140,
+    "shove": 120,
     "gap": 120,
     "s": {
       "width":15,
@@ -23,21 +22,22 @@
   },
   "i": {
     "font":{
-      "size":13,
-      "amountSize":10,
-      "detailSize":14,
-      "weight":300
+      "size":14,
+      "amountSize":11,
+      "detailSize":14
     },
-    "height":26,
+    "height":20,
     "radius":4
   },
   "a": {
     "font":{
-      "size":13,
-      "weight":500
+      "size":13
     },
     "width":8,
     "height":35,
-    "amtScale":10
+    "amtScale":8
+  },
+  "p": {
+    "d":28
   }
 }

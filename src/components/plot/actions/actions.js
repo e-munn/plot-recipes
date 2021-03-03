@@ -28,7 +28,7 @@ const Action = ({ root, color, dim, a, b, j, focus, setFocus}) => {
 
   const label = (
     <text
-      className={'plot-animation-fill plot-text'}
+      className={'plot-animation-fill plot-text weight-2'}
       key={'action' + b + j}
       x={ b.data.pX + 10 }
       y={ b.data.pY + 5 }

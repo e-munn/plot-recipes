@@ -7,6 +7,8 @@ import '../../../css/plot.css'
 
 const Vessel = ({ a, i, dim, color }) => {
 
+
+
   const shape = (
     <rect
       className={'vesselShape'}
@@ -27,13 +29,12 @@ const Vessel = ({ a, i, dim, color }) => {
 
   const label = (
     <text
-      className={'plot-text'}
+      className={'plot-text weight-1'}
       key={'l' + i}
       x={ a.data.pX - 4 }
       y={ a.data.pY + 5 }
       fill={ `${color.green2}` }
       fontSize={dim.v.font.size}
-      fontWeight={dim.v.font.weight}
       letterSpacing={dim.v.font.spacing}
       alignmentBaseline={'hanging'}
       >
@@ -56,8 +57,6 @@ const Vessel = ({ a, i, dim, color }) => {
         {a.data.vessel}
     </rect>
   )
-
-
 
   const transfer = (
     <path
@@ -83,16 +82,12 @@ const Vessel = ({ a, i, dim, color }) => {
       fill={'black'}
       textAnchor={'middle'}
       style={{transform : 'translate(4px, 0px)'}}
-
-
       >
         <textPath
           href={'#path'+i}
           startOffset={'50%'}
-
           >
           {a.data.transfer}
-
         </textPath>
     </text>
   )
@@ -101,15 +96,11 @@ const Vessel = ({ a, i, dim, color }) => {
 
   return (
       <g>
-
         {transfer}
         {transferText}
         {shape}
         {labelBack}
-
         {label}
-
-
         {/* {dot} */}
       </g>
   );

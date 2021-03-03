@@ -4,6 +4,7 @@ import { useSwipeable } from 'react-swipeable';
 import '../../../css/plot.css'
 
 
+
 const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
 
 
@@ -28,7 +29,7 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
   var texzt = b.data.ingredient + '<tspan>' + b.data.ing_amt + '</tspan>'
   const label = (
     <text
-      className={'plot-animation-fill plot-text'}
+      className={'plot-animation-fill plot-text weight-2'}
       key={'ilabel' + a + b + j}
       x={ b.data.pX + 10 }
       y={ b.data.pY + 1 }
@@ -36,20 +37,16 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
       fill={`${statesIng[done].dotColor}`}
       textAnchor={'start'}
       fontSize={dim.i.font.size}
-      fontWeight={dim.i.font.weight}
       alignmentBaseline={'middle'}
       >
       {/* { b.data.stepOrder} */}
 
       { b.data.ingredient}
       <tspan
-        className={'plot-text'}
+        className={'plot-text weight-3'}
         alignmentBaseline={'middle'}
-        fontSize={dim.i.font.size}
-        fontWeight={dim.i.font.weight}
+        fontSize={dim.i.font.amountSize}
         fill={`${statesIng[done].dotColor}`}
-        fontWeight={dim.i.font.weight}
-        fontSize={dim.i.font.size - 4}
         >
         {' - ' + b.data.ing_amt + ' ' + b.data.ing_unit}
       </tspan>
@@ -85,10 +82,16 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
     <circle
       className={'plot-animation-fill'}
       key={'idot' + a + b + j}
-      r={dim.i.radius}
+      r={dim.i.radius }
       cx={ b.data.pX }
       cy={ b.data.pY }
       fill={`${statesIng[done].dotColor}`}
+      // fill={'none'}
+
+      // stroke={`${statesIng[done].dotColor}`}
+      // strokeWidth={2}
+
+
       >
     </circle>
 

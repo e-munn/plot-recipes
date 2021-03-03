@@ -32,7 +32,7 @@
               "detail": "from bees",
               "food_group": "fat",
               "ing_amt": 0.5,
-              "ing_unit": "tablespoons"
+              "ing_unit": "Tbspns."
             }, {
               "action": "toss",
               "detail": "toss until wedges fully coated",
@@ -112,13 +112,13 @@
             "detail": "",
             "food_group": "",
             "ing_amt": 2,
-            "ing_unit": "tablespoons"
+            "ing_unit": "Tbspns."
           }, {
             "ingredient": "vinegar",
             "detail": "white wine",
             "food_group": "",
             "ing_amt": 1,
-            "ing_unit": "tablespoon"
+            "ing_unit": "Tbspn."
           }, {
             "action": "blend",
             "detail": "blend full",
@@ -169,15 +169,15 @@
           }, {
             "ingredient": "italian seasoning",
             "ing_amt": 3,
-            "ing_unit": "teaspoons"
+            "ing_unit": "tsps."
           }, {
             "ingredient": "fennel seeds",
             "ing_amt": 1.5,
-            "ing_unit": "teaspoons"
+            "ing_unit": "tsps."
           }, {
             "ingredient": "rosemary",
             "ing_amt": 0.75,
-            "ing_unit": "teaspoons"
+            "ing_unit": "tsps."
           }, {
             "ingredient": "salt"
           }, {
@@ -193,7 +193,7 @@
           }, {
             "ingredient": "cannellini beans",
             "ing_amt": 14,
-            "ing_unit": "ounces"
+            "ing_unit": "Oz."
           }, {
             "action": "boil",
             "action_amt": 15,
@@ -226,12 +226,12 @@
           {
             "ingredient": "paprika",
             "ing_amt": 1.5,
-            "ing_unit": "teaspoons"
+            "ing_unit": "tsps."
           },
           {
             "ingredient": "red-pepper flakes",
             "ing_amt": 0.5,
-            "ing_unit": "teaspoons"
+            "ing_unit": "tsps."
           },
           {
             "action": "stove",
@@ -321,11 +321,11 @@
           "children": [{
             "ingredient": "butter",
             "ing_amt": 3,
-            "ing_unit": "tablespoons"
+            "ing_unit": "Tbspns."
           }, {
             "ingredient": "olive oil",
             "ing_amt": 1,
-            "ing_unit": "tablespoon"
+            "ing_unit": "Tbspn."
           }, {
             "ingredient": "garlic",
             "ing_amt": 1,
@@ -394,7 +394,7 @@
                       "children": [{
                         "ingredient": "shredded butter",
                         "ing_amt": 4,
-                        "ing_unit": "tablespoons"
+                        "ing_unit": "Tbspns."
                       }, {
                         "action": "freeze",
                         "action_amt": 40,
@@ -414,7 +414,7 @@
                           "ingredient": "salt",
                           "detail": "table salt",
                           "ing_amt": 1,
-                          "ing_unit": "tablespoon"
+                          "ing_unit": "Tbspn."
                         }, {
                           "action": "pulse",
                           "detail": "pulse until combined, 2 pulses",
@@ -537,7 +537,7 @@
               "ingredient": "salt",
               "detail": "table salt",
               "ing_amt": 1.5,
-              "ing_unit": "teaspoons"
+              "ing_unit": "tsps."
             }, {
               "action": "toss",
               "detail": "toss onion and salt",
@@ -568,7 +568,7 @@
             "ingredient": "baking soda",
             "detail": "add baking soda",
             "ing_amt": 0.5,
-            "ing_unit": "teaspoons"
+            "ing_unit": "tsps."
           }, {
             "action": "cook",
             "detail": "cook for 1 minute",
@@ -598,17 +598,17 @@
             "ingredient": "pepper",
             "detail": "add pepper",
             "ing_amt": 0.5,
-            "ing_unit": "teaspoons"
+            "ing_unit": "tsps."
           }, {
             "ingredient": "nutmeg",
             "detail": "add nutmeg",
             "ing_amt": 0.25,
-            "ing_unit": "teaspoons"
+            "ing_unit": "tsps."
           }, {
             "ingredient": "onion",
             "detail": "add onion from before",
             "ing_amt": 1,
-            "ing_unit": "teaspoons"
+            "ing_unit": "tsps."
           }, {
             "action": "simmer",
             "detail": "adjust heat to maintainn simmer and cook",
@@ -628,7 +628,7 @@
             "ingredient": "parsley",
             "detail": "minced fresh",
             "ing_amt": 2,
-            "ing_unit": "tablespoons"
+            "ing_unit": "Tbspns."
           }, {
             "action": "stir",
             "detail": "stir parsley into potato mixture",

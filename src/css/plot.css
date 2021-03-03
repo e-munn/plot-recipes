@@ -1,10 +1,22 @@
 .plot-text {
-  font-family: 'Roboto', sans-serif;
   text-transform: capitalize;
+  font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B";
+  font-style: normal;
 }
 
-.vessel{
+.weight-1 {
+  font-weight: 600;
 }
+
+.weight-2 {
+  font-weight: 500;
+}
+
+.weight-3 {
+  font-weight: 400;
+}
+
+.vessel {}
 
 .plot-animation-move {
   transition: transform 420ms ease 5ms;

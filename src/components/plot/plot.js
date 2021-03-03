@@ -4,6 +4,8 @@ import { select, ascending, transition, easeCubicIn, easeCubicOut } from 'd3';
 import Vessel from './vessels/vessels.js';
 import IngredientNode from './ingredients/ingredientNode.js';
 import Action from './actions/actions.js';
+import Plate from './plate/plate.js';
+
 import color from '../../media/theme/colors.json';
 import dim from '../../media/theme/dim.json';
 
@@ -28,7 +30,7 @@ const Plot = ({recipe}) => {
           .ease(easeCubicIn)
 
         all
-          .attr('filter', 'url(#blur)')
+          // .attr('filter', 'url(#blur)')
           .attr('opacity', .5)
 
         cur
@@ -62,6 +64,9 @@ const Plot = ({recipe}) => {
           .attr('fill', color.background)
 
 
+
+
+
         var amt = cur.append('text')
           .classed('focus', 1)
           .attr('x', curX)
@@ -77,10 +82,18 @@ const Plot = ({recipe}) => {
         svgHeight = select(svgHeight).attr('height')
 
 
-        var svgT = focus[0].parentElement.parentElement.parentElement
+        console.log(cur)
+
+
+        var clickOn = focus[0].parentElement
+
+        var svgT = clickOn.parentElement.parentElement
+
         svgT = select(svgT)
 
-        var clickoff = cur.append('rect')
+        clickOn = select(clickOn)
+
+        var clickoff = clickOn.append('rect')
           .classed('focus', 1)
           .attr('x', -dim.m.margin.left/2)
           .attr('y', 0)
@@ -88,13 +101,14 @@ const Plot = ({recipe}) => {
           .attr('height', +svgHeight)
           .attr('fill', 'transparent')
           .attr('opacity', 1)
-
           .on('click', () => {
             cur.selectAll('.focus').remove()
             all
               .attr('filter', 'none')
               .attr('opacity', 1)
           })
+
+        clickOn.lower()
 
         rect.raise()
         amt.raise()
@@ -115,9 +129,21 @@ const Plot = ({recipe}) => {
 
 
 
+
+
   var root = recipe
 
+
+  var plate=[(
+    <Plate
+      root={root}
+    />
+  )]
+
+
+
   var allVessels = root.descendants().filter(d => ('vessel' in d.data)).filter(d => (d.depth !== 0)).sort((a,b) => {return ascending(a.data.stepOrder, b.data.stepOrder)} )
+
 
   var flows = []
 
@@ -167,11 +193,14 @@ const Plot = ({recipe}) => {
         }
       })
 
+
+
     flows.push(
       <>
         {vessel}
         {actionNodes}
         {ingredientNodes}
+        {plate}
       </>
     )
   })

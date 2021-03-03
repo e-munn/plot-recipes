@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .a {
+        fill: #146D08;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="a" d="M50,0a50,50,0,1,0,50,50A50,50,0,0,0,50,0Zm0,87.5A37.5,37.5,0,1,1,87.5,50,37.5,37.5,0,0,1,50,87.5Z"/>
+    <circle class="a" cx="50" cy="50" r="30"/>
+  </g>
+</svg>

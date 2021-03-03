@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <style>
+      .a {
+        fill: #146D08;
+      }
+
+      .b {
+        fill: #888;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="a" d="M60,44A38,38,0,1,0,98,82,38,38,0,0,0,60,44Zm0,66.5A28.5,28.5,0,1,1,88.5,82,28.5,28.5,0,0,1,60,110.5Z"/>
+    <circle class="a" cx="60" cy="82" r="22"/>
+    <rect class="b" x="48" y="29.33" width="22" height="9" rx="1"/>
+    <rect class="b" x="48" y="14.67" width="22" height="9" rx="1"/>
+    <rect class="b" x="48" width="22" height="9" rx="1"/>
+  </g>
+</svg>

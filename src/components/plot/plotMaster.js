@@ -16,6 +16,9 @@ const PlotMaster = ({ recipe }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
 
+
+
+
   return (
     <div>
       <svg width={windowWidth} height={svgHeight}>
