@@ -37,9 +37,8 @@ const Action = ({ root, color, dim, a, b, j, focus, setFocus}) => {
       fontSize={dim.a.font.size}
       fontWeight={dim.a.font.weight}
       alignmentBaseline={'middle'}
-
-      // ref={ focusRef }
-      // onClick={ () => setFocus([focusRef.current, b]) }
+      ref={ focusRef }
+      onClick={ () => setFocus([focusRef.current, b]) }
       >
       {/* { b.data.stepOrder} */}
       { b.data.action}
@@ -82,13 +81,28 @@ const Action = ({ root, color, dim, a, b, j, focus, setFocus}) => {
       key={'aswipe' + a + b + j}
       x={ b.data.pX - 20 }
       y={ b.data.pY - dim.i.font.size/2 - 2}
-      width={ 110 }
+      width={ 90 }
       height={ aHeight + dim.a.width + 4}
       fill={ 'transparent' }
       // fill={ 'orange' }
       // opacity={ .3 }
-      ref={ focusRef }
-      onClick={ () => setFocus([focusRef.current, b]) }
+
+      >
+    </rect>
+  )
+
+  const tap = (
+    <rect
+      key={'aswipe' + a + b + j}
+      x={ b.data.pX - 20 }
+      y={ b.data.pY - dim.i.font.size/2 - 2}
+      width={ 90 }
+      height={ dim.i.font.size + 10}
+
+      fill={ 'transparent' }
+      // fill={ 'orange' }
+      // opacity={ .3 }
+
       >
     </rect>
   )
@@ -112,6 +126,9 @@ const Action = ({ root, color, dim, a, b, j, focus, setFocus}) => {
       {shape}
       {label}
       {swipe}
+      {tap}
+
+
 
       {/* {dot} */}
 

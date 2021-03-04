@@ -9,7 +9,7 @@ import Plate from './plate/plate.js';
 import color from '../../media/theme/colors.json';
 import dim from '../../media/theme/dim.json';
 
-const Plot = ({recipe}) => {
+const Plot = ({ recipe }) => {
 
   const [focus, setFocus] = useState(false);
   const prevFocus = useRef(false);
@@ -62,10 +62,6 @@ const Plot = ({recipe}) => {
           .attr('width', 160)
           .attr('height', dim.i.font.size * 2)
           .attr('fill', color.background)
-
-
-
-
 
         var amt = cur.append('text')
           .classed('focus', 1)
@@ -141,9 +137,7 @@ const Plot = ({recipe}) => {
   )]
 
 
-
   var allVessels = root.descendants().filter(d => ('vessel' in d.data)).filter(d => (d.depth !== 0)).sort((a,b) => {return ascending(a.data.stepOrder, b.data.stepOrder)} )
-
 
   var flows = []
 
@@ -207,7 +201,7 @@ const Plot = ({recipe}) => {
 
   return (
       <g
-        transform={`translate(${0}, ${50})`}
+        transform={`translate(${0}, ${0})`}
         >
         <defs>
           <filter id="blur" x="-0.08" y="0">

@@ -1,0 +1,14 @@
+.head{
+  /* font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B"; */
+  font-family: "Didot 06 A", "Didot 06 B";
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px;
+  color: #777;
+}
+
+
+svg {
+  transition: height 420ms ease 5ms;
+
+}

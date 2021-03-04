@@ -1,0 +1,47 @@
+
+.splashbox{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+}
+
+.splash{
+  width: 100vw;
+  height: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.splash-cover{
+  width: 100vw;
+  height: 100vw;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,0) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+}
+
+.splash-title{
+  font-size: 44px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 15px;
+
+  font-family: "Chronicle Display A", "Chronicle Display B";
+  font-style: normal;
+  font-weight: 300;
+
+}
+
+
+.fot{
+  font-family: "Chronicle Display A", "Chronicle Display B";
+  font-style: normal;
+  font-weight: 300;
+}

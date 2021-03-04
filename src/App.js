@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import PlotMaster from './components/plot/plotMaster.js';
+import PageMaster from './components/pageMaster.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,7 +16,7 @@ const App = props => {
 
   const recipes = recipe_master.map(d => (
       <Route path={ '/' + d.path}>
-        <PlotMaster
+        <PageMaster
           recipe={d}
         />
       </Route>
@@ -28,7 +28,7 @@ const App = props => {
     <Router>
       <div>
         <Switch>
-          <Route exact path={ '/'}>
+          <Route exact path={'/'}>
             <Home/>
           </Route>
           {recipes}

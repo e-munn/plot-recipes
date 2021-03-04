@@ -1,6 +1,8 @@
 .plot-text {
   text-transform: capitalize;
-  font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B";
+  /* font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B"; */
+  font-family: "Didot 06 A", "Didot 06 B";
+
   font-style: normal;
 }
 

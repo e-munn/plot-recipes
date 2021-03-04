@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { scaleOrdinal } from 'd3'
-
 import '../css/cards.css'
-
 import creamy from '../media/images/creamy-white-bean-soup-with-spicy-paprika-oil.jpg'
 import hearty from '../media/images/hearty-whole-wheat-pasta-with-brussels-sprouts-cheese-and-potato.jpg'
 import sweet from '../media/images/sweet-potatoes-with-cilantro-chiles-sauce.jpg'
@@ -46,7 +44,7 @@ const Card = ({d, i}) => {
       </div>
     </div>
   </div>
-    
+
   )
 }
 

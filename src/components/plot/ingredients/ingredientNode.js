@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { select, max, sum,  hierarchy, linkHorizontal, easeSin, easeCubicIn, easeCubicOut, transition } from 'd3';
+import { select, selectAll, max, sum,  hierarchy, linkHorizontal, easeSin, easeCubicIn, easeCubicOut, transition } from 'd3';
 import { useSwipeable } from 'react-swipeable';
 import '../../../css/plot.css'
 
@@ -57,6 +57,8 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
 
 
 
+
+
   // var length = label.textLength
   //
   //   const labelAmt = (
@@ -82,7 +84,7 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
     <circle
       className={'plot-animation-fill'}
       key={'idot' + a + b + j}
-      r={dim.i.radius }
+      r={ dim.i.radius }
       cx={ b.data.pX }
       cy={ b.data.pY }
       fill={`${statesIng[done].dotColor}`}
@@ -102,9 +104,9 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
     <rect
       key={'iswipe' + a + b + j}
       x={ b.data.pX - 20 }
-      y={ b.data.pY - dim.i.font.size/2 - 5}
+      y={ b.data.pY - dim.i.font.size/2 - 2}
       width={ 110 }
-      height={ dim.i.font.size + 10}
+      height={ dim.i.font.size + 6}
       fill={ 'transparent' }
       // fill={ 'blue' }
       // opacity={ .3 }
