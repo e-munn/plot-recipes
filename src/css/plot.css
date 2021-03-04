@@ -1,8 +1,6 @@
 .plot-text {
   text-transform: capitalize;
-  /* font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B"; */
-  font-family: "Didot 06 A", "Didot 06 B";
-
+  font-family: "Gotham SSm A", "Gotham SSm B";
   font-style: normal;
 }
 
@@ -15,6 +13,8 @@
 }
 
 .weight-3 {
+  font-family: "Decimal A", "Decimal B";
+  font-style: normal;
   font-weight: 400;
 }
 
