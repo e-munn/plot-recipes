@@ -22,8 +22,7 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth)
         >
         <div className={'splash-cover'}>
           <div
-            className={'splash-title fot'}
-
+            className={'splash-title'}
             >
               {recipe.name}
           </div>
