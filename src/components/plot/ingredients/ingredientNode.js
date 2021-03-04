@@ -4,7 +4,6 @@ import { useSwipeable } from 'react-swipeable';
 import '../../../css/plot.css'
 
 
-
 const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
 
 
