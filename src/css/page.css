@@ -1,16 +1,16 @@
 .head{
-  font-family: "Gotham Rounded SSm A", "Gotham Rounded SSm B";
+  font-family: "Gotham SSm A", "Gotham SSm B";
   letter-spacing: 1px;
   font-style: normal;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 12px 15px;
-  color: #999;
+  color: #ADADAD;
 }
 
 hr {
   margin: 0px 15px;
-  
+
 }
 
 svg {
