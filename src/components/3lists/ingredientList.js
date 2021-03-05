@@ -13,6 +13,23 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
 const listDisplay = [];
 
+
+const clean = (a, b) => {
+  var c = '';
+  if (a == null) {
+    a = ''
+  }
+  if (b == null){
+    b = ''
+  }
+  if ( (a == null) && (b == null) ) {
+  } else {
+    c = ' - ' + a + ' ' + b
+  }
+  return c
+}
+
+
 ingredientList.forEach((d,i) => {
   listDisplay.push(
     <text
@@ -35,7 +52,7 @@ ingredientList.forEach((d,i) => {
 
         fill={color.blue2}
         >
-        {' - ' + d.data.ing_amt + ' ' + d.data.ing_unit}
+        { clean(d.data.ing_amt, d.data.ing_unit) }
       </tspan>
     </text>
   )

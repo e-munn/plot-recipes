@@ -27,15 +27,19 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
   ]
 
 
-  const cleanAmt = (a) => {
-    return a
-  }
-
-  const cleanUnit = (a) => {
-    if (a == null){
+  const clean = (a, b) => {
+    var c = '';
+    if (a == null) {
       a = ''
     }
-    return a
+    if (b == null){
+      b = ''
+    }
+    if ( (a == null) && (b == null) ) {
+    } else {
+      c = ' - ' + a + ' ' + b
+    }
+    return c
   }
 
   var texzt = b.data.ingredient + '<tspan>' + b.data.ing_amt + '</tspan>'
@@ -59,7 +63,7 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
         fill={`${statesIng[done].dotColor}`}
         >
 
-        {' - ' + cleanAmt(b.data.ing_amt) + ' ' + cleanUnit(b.data.ing_unit)}
+        { clean(b.data.ing_amt, b.data.ing_unit) }
 
 
       </tspan>
