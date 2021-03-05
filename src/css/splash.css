@@ -27,11 +27,23 @@
 }
 
 .splash-title{
-  font-size: 26px;
+  font-size: 36px;
   text-decoration: none;
   letter-spacing: 1px;
   padding: 10px 8px;
   font-family: "Chronicle Display A", "Chronicle Display B";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+
+.splash-about{
+  background: linear-gradient(0deg, rgba(249,247,241,1) 0%, rgba(244,235,217,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+
 }

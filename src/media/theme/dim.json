@@ -7,13 +7,13 @@
   },
   "v": {
     "font":{
-      "size":15,
+      "size":16,
       "spacing": 0
     },
     "marginBottom": 10,
     "padding1": 20,
     "padding2": 8,
-    "shove": 120,
+    "shove": 170,
     "gap": 120,
     "s": {
       "width":15,

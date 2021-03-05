@@ -1,11 +1,11 @@
 .head{
   font-family: "Gotham SSm A", "Gotham SSm B";
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   font-style: normal;
-  font-size: 26px;
+  font-size: 34px;
   font-weight: 700;
   margin: 12px 15px;
-  color: #ADADAD;
+  color: #C2C2C2;
 }
 
 hr {

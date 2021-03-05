@@ -73,6 +73,7 @@
             "action": "bake",
             "detail": "until tender and lightly browned",
             "action_type": null,
+            "temp": 375,
             "action_amt": 45,
             "action_unit": "min"
           }]
@@ -344,6 +345,7 @@
           "ing_unit": "cups"
         }, {
           "action": "bake",
+          "temp": 375,
           "action_amt": 20,
           "action_unit": "min"
         }, {
@@ -646,6 +648,7 @@
           "action_unit": "min"
         }, {
           "action": "bake",
+          "temp": 375,
           "detail": "bake until top is light golden brown",
           "action_amt": 20,
           "action_unit": "min"
@@ -656,6 +659,7 @@
           "action_unit": "min"
         }, {
           "action": "bake",
+          "temp": 375,
           "detail": "continue to bake until crust is deep golden brown",
           "action_amt": 40,
           "action_unit": "min"
