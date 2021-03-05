@@ -16,8 +16,6 @@
   font-weight: 400;
 }
 
-.vessel {}
-
 .plot-animation-move {
   transition: transform 420ms ease 5ms;
 }

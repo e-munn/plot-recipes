@@ -27,13 +27,13 @@ const PageMaster = ({ recipe }) => {
         <Splash
           recipe={ recipe }
         />
-        <IngredientList
-          ingredientList={ingredientList[0]}
-          svgHeight={ingredientList[1]}
-        />
         <PlotMaster
           recipePlot={recipePlot}
           svgHeight={svgHeight}
+        />
+        <IngredientList
+          ingredientList={ingredientList[0]}
+          svgHeight={ingredientList[1]}
         />
     </div>
   );

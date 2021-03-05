@@ -26,14 +26,12 @@ const App = props => {
 
   return (
     <Router>
-      <div>
         <Switch>
           <Route exact path={'/'}>
             <Home/>
           </Route>
           {recipes}
         </Switch>
-      </div>
     </Router>
   );
 };

@@ -49,8 +49,6 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
         >
         {' - ' + b.data.ing_amt + ' ' + b.data.ing_unit}
       </tspan>
-
-
     </text>
   )
 
@@ -87,12 +85,6 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
       cx={ b.data.pX }
       cy={ b.data.pY }
       fill={`${statesIng[done].dotColor}`}
-      // fill={'none'}
-
-      // stroke={`${statesIng[done].dotColor}`}
-      // strokeWidth={2}
-
-
       >
     </circle>
 
@@ -107,23 +99,16 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
       width={ 110 }
       height={ dim.i.font.size + 6}
       fill={ 'transparent' }
-      // fill={ 'blue' }
-      // opacity={ .3 }
       ref={ focusRef }
       onClick={ () => setFocus([focusRef.current, b]) }
       >
     </rect>
   )
 
-
-
-
-
   const handlers = useSwipeable({
     onSwipedLeft: () => setDone(1),
     onSwipedRight: () => setDone(0)
   });
-
 
   return (
     <g

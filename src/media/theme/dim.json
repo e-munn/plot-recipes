@@ -22,16 +22,16 @@
   },
   "i": {
     "font":{
-      "size":14,
+      "size":15,
       "amountSize":11,
       "detailSize":14
     },
-    "height":20,
-    "radius":4
+    "height":22,
+    "radius":3
   },
   "a": {
     "font":{
-      "size":13
+      "size":15
     },
     "width":8,
     "height":35,

@@ -32,7 +32,6 @@ const Home = () => {
                       d={d}
                       i={i}
                     />
-
                 </Link>
             )
           }

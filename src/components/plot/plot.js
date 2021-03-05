@@ -116,7 +116,6 @@ const Plot = ({ recipe }) => {
           prev = select(prev)
           var rem = prev.selectAll('.focus')
           rem.remove()
-
         }
         prevFocus.current = focus
 
@@ -201,7 +200,7 @@ const Plot = ({ recipe }) => {
 
   return (
       <g
-        transform={`translate(${0}, ${0})`}
+        transform={`translate(${0}, ${15})`}
         >
         <defs>
           <filter id="blur" x="-0.08" y="0">

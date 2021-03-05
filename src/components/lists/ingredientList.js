@@ -3,6 +3,8 @@ import { scaleOrdinal } from 'd3'
 import dim from '../../media/theme/dim.json';
 import color from '../../media/theme/colors.json';
 import '../../css/page.css';
+import '../../css/plot.css';
+
 
 
 const IngredientList = ({ ingredientList, svgHeight }) => {
@@ -15,20 +17,23 @@ const listDisplay = [];
 ingredientList.forEach((d,i) => {
   listDisplay.push(
     <text
-      className={'plot-animation-fill plot-text weight-2'}
+      className={'plot-animation-fill plot-text'}
       x={ 40 }
-      y={ 12 + i * 20 }
+      y={ i * 24 }
       fill={color.blue2}
       textAnchor={'start'}
-      fontSize={dim.i.font.size}
+      fontSize={ 17 }
+      fontWeight={ 500 }
+
       alignmentBaseline={'middle'}
       >
       { d.data.ingredient }
       <tspan
-        className={'plot-text weight-3'}
-
+        className={'plot-text'}
         alignmentBaseline={'middle'}
-        fontSize={dim.i.font.amountSize}
+        fontSize={ 15 }
+        fontWeight={ 400 }
+
         fill={color.blue2}
         >
         {' - ' + d.data.ing_amt + ' ' + d.data.ing_unit}
@@ -43,7 +48,7 @@ ingredientList.forEach((d,i) => {
   dot.push(
     <circle
       cx={ 20 }
-      cy={ 10 + i * 20 }
+      cy={  i * 24 }
       r={ dim.i.radius }
       fill={ color.blue2 }
       >
@@ -53,7 +58,7 @@ ingredientList.forEach((d,i) => {
 
 
   const [open, setOpen] = useState(0);
-
+  const [display, setDisplay] = useState(0);
 
   const map = scaleOrdinal()
     .domain([0, 1])
@@ -63,15 +68,22 @@ ingredientList.forEach((d,i) => {
     <>
       <div
         className={'head'}
-        onClick={ () => { setOpen(1-open) } }
+        onClick={ () => {
+          setDisplay( 1-display )
+          setTimeout( () => {
+            setOpen( 1 - open )
+          }, 1)
+        } }
         >
         INGREDIENTS
       </div>
-      {/* <svg width={windowWidth}  display={map(open)} height={ open * svgHeight }> */}
-        <svg width={windowWidth} height={ open * svgHeight }>
 
-        { dot }
-        { listDisplay }
+      <svg width={windowWidth}  display={ map(display) } height={ open * (svgHeight + 75) }>
+        <g
+          style={{ transform: `translate(${ 0 }px, ${ 15 }px)`  }}>
+          { dot }
+          { listDisplay }
+        </g>
       </svg>
       <hr/>
     </>
