@@ -12,14 +12,12 @@ import Splash from './splash/splash.js';
 const PageMaster = ({ recipe }) => {
 
   var ingredientList = listize(recipe)
-
   var recipeAndHeight = plotize(recipe)
   var recipePlot = recipeAndHeight[0]
   var svgHeight = recipeAndHeight[1]
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
-
 
 
   return (

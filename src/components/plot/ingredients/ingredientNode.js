@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { select, selectAll, max, sum,  hierarchy, linkHorizontal, easeSin, easeCubicIn, easeCubicOut, transition } from 'd3';
 import { useSwipeable } from 'react-swipeable';
+// import 'fraction.js';
+
 import '../../../css/plot.css'
 
 
@@ -25,6 +27,11 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
   ]
 
 
+  const cleanAmt = (a) => {
+
+    return a
+  }
+
   var texzt = b.data.ingredient + '<tspan>' + b.data.ing_amt + '</tspan>'
   const label = (
     <text
@@ -38,8 +45,6 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
       fontSize={dim.i.font.size}
       alignmentBaseline={'middle'}
       >
-      {/* { b.data.stepOrder} */}
-
       { b.data.ingredient}
       <tspan
         className={'plot-text weight-3'}
@@ -47,7 +52,9 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
         fontSize={dim.i.font.amountSize}
         fill={`${statesIng[done].dotColor}`}
         >
-        {' - ' + b.data.ing_amt + ' ' + b.data.ing_unit}
+        {' - ' + cleanAmt(b.data.ing_amt) + ' ' + b.data.ing_unit}
+
+
       </tspan>
     </text>
   )

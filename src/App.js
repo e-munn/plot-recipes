@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Home from './components/home.js';
 import recipe_master from './media/recipes/recipe_master.json';
+import ScrollToTop from './components/scrolltotop.js';
 
 
 
@@ -26,6 +27,7 @@ const App = props => {
 
   return (
     <Router>
+      <ScrollToTop />
         <Switch>
           <Route exact path={'/'}>
             <Home/>

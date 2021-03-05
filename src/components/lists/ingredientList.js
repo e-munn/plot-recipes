@@ -57,8 +57,8 @@ ingredientList.forEach((d,i) => {
 })
 
 
-  const [open, setOpen] = useState(0);
-  const [display, setDisplay] = useState(0);
+  const [open, setOpen] = useState(1);
+  const [display, setDisplay] = useState(1);
 
   const map = scaleOrdinal()
     .domain([0, 1])
@@ -73,7 +73,7 @@ ingredientList.forEach((d,i) => {
           setTimeout( () => {
             setOpen( 1 - open )
           }, 1)
-        } }
+        }}
         >
         INGREDIENTS
       </div>

@@ -5,16 +5,13 @@ import arrowup from '../../media/ui-symbols/arrowup.svg';
 import arrowdown from '../../media/ui-symbols/arrowdown.svg';
 import '../../css/page.css';
 
-
-
-
 const PlotMaster = ({ recipePlot, svgHeight }) => {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
 
-  const [open, setOpen] = useState(0);
-  const [display, setDisplay] = useState(0);
+  const [open, setOpen] = useState(1);
+  const [display, setDisplay] = useState(1);
   const map = scaleOrdinal()
     .domain([0, 1])
     .range(['none', 'block'])
