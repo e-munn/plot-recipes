@@ -10,6 +10,7 @@ import tourte from '../media/images/tourte-aux-pommes-de-terre.png'
 
 const Card = ({d, i}) => {
 
+
   const imageMap = scaleOrdinal()
     .domain(['creamy-white-bean-soup-with-spicy-paprika-oil', 'hearty-whole-wheat-pasta-with-brussels-sprouts-cheese-and-potato', 'sweet-potatoes-with-cilantro-chiles-sauce', 'tourte-aux-pommes-de-terre'])
     .range([creamy,hearty,sweet, tourte])

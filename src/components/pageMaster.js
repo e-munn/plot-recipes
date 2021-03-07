@@ -16,7 +16,6 @@ const PageMaster = ({ recipe }) => {
   var ingredientList = listize(recipe)
   var recipeAndHeight = plotize(recipe)
 
-
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
 

@@ -35,6 +35,7 @@ const IngredientNode = ({ root, color, dim, a, b, j, focus, setFocus }) => {
     if (b == null){
       b = ''
     }
+
     if ( (a == null) && (b == null) ) {
     } else {
       c = ' - ' + a + ' ' + b

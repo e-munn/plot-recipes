@@ -1,0 +1,4 @@
+type RECIPES @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  recipe: AWSJSON
+}
