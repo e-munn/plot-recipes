@@ -1,14 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import Plot from './plot.js';
 import { select, easeSin, easeCubicIn, easeCubicOut, transition, scaleOrdinal } from 'd3';
+
 import arrowup from '../../media/ui-symbols/arrowup.svg';
 import arrowdown from '../../media/ui-symbols/arrowdown.svg';
 import '../../css/page.css';
-
-const PlotMaster = ({ recipePlot, svgHeight, preheat }) => {
+const PlotMaster = ({ recipePlot, svgHeight, preheat, thinPage }) => {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight)
 
   const [open, setOpen] = useState(1);
   const [display, setDisplay] = useState(1);
@@ -16,17 +15,18 @@ const PlotMaster = ({ recipePlot, svgHeight, preheat }) => {
     .domain([0, 1])
     .range(['none', 'block'])
 
+
   return (
     <>
-      <hr/>
       <div
         className={'head'}
+        style={ thinPage }
         onClick={ () => {
-          setDisplay( 1-display )
+          setDisplay( 1 - display )
           setTimeout( () => {
             setOpen( 1 - open )
           }, 1)
-        } }
+        }}
         >
         PLOT
       </div>

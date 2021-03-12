@@ -12,7 +12,6 @@ import '../css/cards.css';
 const Home = () => {
 
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
   return (
     <>

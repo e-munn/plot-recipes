@@ -7,7 +7,7 @@ import '../../css/plot.css';
 
 
 
-const IngredientList = ({ ingredientList, svgHeight }) => {
+const IngredientList = ({ ingredientList, svgHeight, thinPage }) => {
 
 const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
@@ -82,9 +82,9 @@ ingredientList.forEach((d,i) => {
 
   return (
     <>
-    <hr/>
       <div
         className={'head'}
+        style={ thinPage }
         onClick={ () => {
           setDisplay( 1-display )
           setTimeout( () => {

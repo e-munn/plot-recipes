@@ -10,6 +10,8 @@ import {
 import Home from './components/home.js';
 import recipe_master from './media/recipes/recipe_master.json';
 import ScrollToTop from './components/scrolltotop.js';
+
+
 import Amplify, { DataStore, Predicates } from "aws-amplify";
 import { RECIPES } from "./models";
 import awsconfig from "./aws-exports";
@@ -18,6 +20,8 @@ Amplify.configure(awsconfig);
 
 
 const App = () => {
+
+  
   const [isLoading, setLoading] = useState(false)
   const [isError, setError] = useState(false)
   const [data, setData] = useState([]);
